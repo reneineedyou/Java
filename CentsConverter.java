@@ -15,7 +15,7 @@ public class CentsConverter{
   //creates the scanner to get the users input  
   Scanner scanner = new Scanner(System.in);
 
-  System.out.print("Enter the cents as an integer:");
+  System.out.print("Enter the pennies as an integer:");
   int totalCents = scanner.nextInt();
 
   //calculations
