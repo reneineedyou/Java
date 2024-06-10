@@ -19,19 +19,14 @@ public class CentsConverter{
   int totalCents = scanner.nextInt();
 
   //calculations
-  int dollars = totalCents / 100;
-  int remainingCents = totalCents - (dollars * 100);
-  
+  int dollars = totalCents / 100; 
+  int remainingCents = totalCents % 100;
   int quarters = remainingCents / 25;
-  remainingCents = totalCents - (dollars * 100) - (quarters * 25);
-  
+  remainingCents = remainingCents % 25;
   int dimes = remainingCents / 10;
-  remainingCents = totalCents - (dollars * 100) - (quarters * 25) - (dimes *10);
-  
-  int nickels = remainingCents / 5;
-  remainingCents = totalCents - (dollars * 100) - (quarters * 25) - (dimes *10) - (nickels * 5);
-  
-  int pennies = remainingCents;
+  remainingCents = remainingCents % 10;  
+  int nickels = remainingCents / 5;      
+  int pennies = remainingCents % 5;
   
   //displays the results
   System.out.println("Dollars: " + dollars);
