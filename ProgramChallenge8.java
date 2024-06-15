@@ -41,8 +41,26 @@ public class ProgramChallenge8 {
         // Print the formatted random number
         System.out.println("user number (00-99): " + formattedInput);
 
-       
-        
+        char x0 = formattedNumber.charAt(0);
+        char x1 = formattedNumber.charAt(1);
+        char y0 = formattedInput.charAt(0);
+        char y1 = formattedInput.charAt(1);
+
+        if (formattedInput==formattedNumber) {
+            System.out.println("You win $10,000!!!");
+        }
+
+        if (x1==y1  ) {
+            System.out.println("You win $10,000!!!");
+        }
+
+        if (formattedInput==formattedNumber) {
+            System.out.println("You win $10,000!!!");
+        }
+
+        if (formattedInput==formattedNumber) {
+            System.out.println("You win $10,000!!!");
+        }
     }
 
     
