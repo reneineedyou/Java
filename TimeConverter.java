@@ -29,6 +29,9 @@ public class TimeConverter{
   System.out.println("Number of minutes: " + minutes);
   System.out.println("Number of seconds: " + seconds);
 
+  // Close the scanner
+  scanner.close();
+
   }
 
 }

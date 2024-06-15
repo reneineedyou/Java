@@ -25,6 +25,9 @@ public class TempConverter {
   //displays the results
   System.out.println("Temperature in Celsius: " + celsius);
 
+  // Close the scanner
+  scanner.close();
+  
   }
 
 }

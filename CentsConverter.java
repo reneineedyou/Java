@@ -35,6 +35,9 @@ public class CentsConverter{
   System.out.println("Nickels: " + nickels);
   System.out.println("Pennies: " + pennies);
     
-  }
+  // Close the scanner
+  scanner.close();
 
+  }
+  
 }
