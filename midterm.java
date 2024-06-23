@@ -6,12 +6,13 @@ public class midterm {
 
     
 
-    int a = 2;
-        int b = 8;
-        int c = a * b;
-        System.out.println(c);
-
-
+    int num = 1;
+    switch (num) {
+        case 1: System.out.println("One");
+        case 2: System.out.println("Two");
+        case 3: System.out.println("Three");
+        default: System.out.println("Default");
+    }
 
   }
 }
