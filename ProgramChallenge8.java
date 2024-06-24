@@ -13,22 +13,26 @@ If the digits in the user input matches the lottery backwards, the award is $3,0
 If one digit in the user input matches a digit in the lottery, the award is $1,000.
 */
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class ProgramChallenge8 {
 
     public static void main(String[] args) {
-        // Generate a random number between 0-99
+        // Generate a random number between 00-99
         Random rand = new Random();
         int lotteryNumber = rand.nextInt(100);
         
-        // Prompt the user to enter a two-digit number
         Scanner scanner = new Scanner(System.in);
-        
+
+
+        /* 
         //lines were used for testing purposes
-        //System.out.print(lotteryNumber + " is the number..." + "press Enter to pass.");
-        //int pass = scanner.nextInt();
+        String testOutput = String.format("%02d", lotteryNumber);
+        System.out.print(testOutput + " is the number..." + "Enter '0' to pass.");
+        int pass = scanner.nextInt();
+        */
+
         
         //prompts user for a 2 digit number
         System.out.print("Enter a two-digit number 00-99: ");
@@ -53,14 +57,19 @@ public class ProgramChallenge8 {
         
         // Display the result
         System.out.println("The lottery number is: " + lotteryStr);
-        if (award == 10000) {
-            System.out.println("Perfect match! You won $10,000!!!");
-        } else if (award == 3000) {
-            System.out.println("Wow, reverse match!! You won $3,000!");
-        } else if (award == 1000) {
-            System.out.println("Matched 1 digit congrats! You won $1,000!");
-        } else {
-            System.out.println("Sorry, no match. Better luck next time!");
+        switch (award) {
+            case 10000:
+                System.out.println("Perfect match! You won $10,000!!!");
+                break;
+            case 3000:
+                System.out.println("Wow, reverse match!! You won $3,000!");
+                break;
+            case 1000:
+                System.out.println("Matched 1 digit congrats! You won $1,000!");
+                break;
+            default:
+                System.out.println("Sorry, no match. Better luck next time!");
+                break;
         }
 
         scanner.close();
