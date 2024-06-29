@@ -3,7 +3,11 @@ Rene Gonzalez
 COP2800
 Programming Challenge 3
 
-Description:  This program lets the user enter the amount as an integer representing cents and output a report listing the monetary equivalent in single dollars, quarters, dimes, nickels, and pennies. Your program should report maximum number of dollars, then the maximum number of quarters, dimes and so on, in that order.
+Description:  This program lets the user enter the amount as an 
+integer representing cents and output a report listing the monetary 
+equivalent in single dollars, quarters, dimes, nickels, and pennies. 
+Your program should report maximum number of dollars, then the maximum 
+number of quarters, dimes and so on, in that order.
 */ 
 
 import java.util.Scanner;
